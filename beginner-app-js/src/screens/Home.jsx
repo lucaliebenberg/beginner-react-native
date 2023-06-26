@@ -102,6 +102,13 @@ const Home = ({ navigation }) => {
 
     return (
       <View>
+        <Entypo
+          name="menu"
+          size={32}
+          color="black"
+          style={{ paddingLeft: 10 }}
+          onPress={() => navigation.openDrawer()}
+        />
         <FlatList
           data={Data}
           renderItem={renderHomeItems}
